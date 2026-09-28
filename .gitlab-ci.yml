@@ -1,0 +1,13 @@
+include:
+  - remote: https://raw.githubusercontent.com/ika-rwth-aachen/docker-ros/refs/heads/main/.gitlab-ci/docker-ros.yml
+
+variables:
+  PLATFORM: amd64
+  TARGET: dev,run
+  BASE_IMAGE: rwthika/ros2:jazzy
+  RMW_IMPLEMENTATION: rmw_zenoh_cpp
+  COMMAND: ros2 launch openads_demo_service openads_demo_service_launch.py
+  ENABLE_INDUSTRIAL_CI: true
+  LABEL_MAINTAINER: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
+  LABEL_AUTHORS: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
+  TARGET_CMAKE_ARGS: -DCMAKE_EXPORT_COMPILE_COMMANDS=1

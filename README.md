@@ -17,6 +17,9 @@
 
 This repository serves as a demo for an OpenADS module, showcasing the structure and documentation style for OpenADS packages. It includes a simple ROS 2 node that subscribes to a topic, processes the data, and publishes the result. This is a short description of the repository and its purpose.
 
+> [!TIP]
+> The [**OpenADSuite Documentation**](https://openads-project.github.io/openadsuite/openadsuite.html) explains how this template can be used to create new OpenADServices.
+
 > ### ⚙️ Recommended GitHub Settings
 > 
 > [**GitHub Organization Settings**](https://github.com/organizations/openads-project/settings):
